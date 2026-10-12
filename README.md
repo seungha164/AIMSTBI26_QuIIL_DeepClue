@@ -63,7 +63,7 @@ msTBI lesions vary widely in number and size, so standard foreground sampling ov
 Create a Python environment with the nnU-Net v2 dependencies (PyTorch etc.), then install the modified nnU-Net bundled in this repository in editable mode:
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/seungha164/AIMSTBI26_QuIIL_DeepClue.git
 cd AIMSTBI26_QuIIL_DeepClue
 pip install -e nnUNet
 ```
@@ -79,7 +79,7 @@ export nnUNet_raw="DATA/nnUNet_raw"
 export nnUNet_preprocessed="DATA/nnUNet_preprocessed"
 export nnUNet_results="nnUNet_results"
 
-# Avoid CPU oversubscription in data-loading workers
+# (Optional: Avoid CPU oversubscription in data-loading workers)
 export OPENBLAS_NUM_THREADS=1
 export OMP_NUM_THREADS=1
 export MKL_NUM_THREADS=1
